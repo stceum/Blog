@@ -17,15 +17,6 @@
     </item>
     
     <item>
-      <title>UEFI boot: how does that actually work, then?</title>
-      <link>https://blog.stceum.top/posts/uefi-boot-how-does-that-actually-work-then/</link>
-      <pubDate>Tue, 06 Sep 2022 14:59:46 +0000</pubDate>
-      
-      <guid>https://blog.stceum.top/posts/uefi-boot-how-does-that-actually-work-then/</guid>
-      <description> </description>
-    </item>
-    
-    <item>
       <title>关于在虚拟机中启动硬盘中的 Linux/Windows 的实现记录</title>
       <link>https://blog.stceum.top/posts/linux-windows-dual-boot/</link>
       <pubDate>Fri, 19 Aug 2022 13:50:51 +0000</pubDate>
