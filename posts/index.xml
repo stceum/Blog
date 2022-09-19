@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on stceum hang</title>
+    <link>https://blog.stceum.top/posts/</link>
+    <description>Recent content in Posts on stceum hang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 10 Sep 2022 16:53:50 +0000</lastBuildDate><atom:link href="https://blog.stceum.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Something about using custom WSL distro</title>
+      <link>https://blog.stceum.top/posts/something-about-using-custom-wsl-distro/</link>
+      <pubDate>Sat, 10 Sep 2022 16:53:50 +0000</pubDate>
+      
+      <guid>https://blog.stceum.top/posts/something-about-using-custom-wsl-distro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UEFI boot: how does that actually work, then?</title>
+      <link>https://blog.stceum.top/posts/uefi-boot-how-does-that-actually-work-then/</link>
+      <pubDate>Tue, 06 Sep 2022 14:59:46 +0000</pubDate>
+      
+      <guid>https://blog.stceum.top/posts/uefi-boot-how-does-that-actually-work-then/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>关于在虚拟机中启动硬盘中的 Linux/Windows 的实现记录</title>
+      <link>https://blog.stceum.top/posts/linux-windows-dual-boot/</link>
+      <pubDate>Fri, 19 Aug 2022 13:50:51 +0000</pubDate>
+      
+      <guid>https://blog.stceum.top/posts/linux-windows-dual-boot/</guid>
+      <description>占坑 linux和windows双系统体验
+link link</description>
+    </item>
+    
+    <item>
+      <title>常用的 git 命令</title>
+      <link>https://blog.stceum.top/posts/git-frequently-uesd/</link>
+      <pubDate>Fri, 19 Aug 2022 13:50:03 +0000</pubDate>
+      
+      <guid>https://blog.stceum.top/posts/git-frequently-uesd/</guid>
+      <description>占坑 记录git常用命令</description>
+    </item>
+    
+    <item>
+      <title>神奇的 UEFI</title>
+      <link>https://blog.stceum.top/posts/sth-about-uefi/</link>
+      <pubDate>Fri, 19 Aug 2022 13:47:11 +0000</pubDate>
+      
+      <guid>https://blog.stceum.top/posts/sth-about-uefi/</guid>
+      <description>在安装双系统的过程中，硬件是如何找到引导项的，硬件是如何找到启动程序的，以及如何优雅的删除启动项，这些问题一直困扰着我。
+在网上查询到很多的资料之后，发现一篇大牛的文章对这些问题有了详细的解答，文章风格也十分有趣，便翻译记录如下。
+link link link</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://blog.stceum.top/posts/hello-world/</link>
+      <pubDate>Fri, 19 Aug 2022 13:47:09 +0000</pubDate>
+      
+      <guid>https://blog.stceum.top/posts/hello-world/</guid>
+      <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick Start Create a new post $ hexo new &amp;#34;My New Post&amp;#34; More info: Writing
+Run server $ hexo server More info: Server
+Generate static files $ hexo generate More info: Generating
+Deploy to remote sites $ hexo deploy More info: Deployment</description>
+    </item>
+    
+  </channel>
+</rss>
