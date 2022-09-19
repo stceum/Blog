@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>stceum hang</title>
-    <link>https://blog.stceum.top/</link>
-    <description>Recent content on stceum hang</description>
+    <title>Archieves on stceum hang</title>
+    <link>https://blog.stceum.top/archieves/</link>
+    <description>Recent content in Archieves on stceum hang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Sep 2022 10:44:39 +0800</lastBuildDate><atom:link href="https://blog.stceum.top/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test</title>
-      <link>https://blog.stceum.top/test/test/</link>
-      <pubDate>Mon, 19 Sep 2022 10:44:39 +0800</pubDate>
-      
-      <guid>https://blog.stceum.top/test/test/</guid>
-      <description>test file</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://blog.stceum.top/posts/my-first-post/</link>
-      <pubDate>Tue, 13 Sep 2022 13:50:28 +0800</pubDate>
-      
-      <guid>https://blog.stceum.top/posts/my-first-post/</guid>
-      <description>Site created!</description>
-    </item>
-    
+    <lastBuildDate>Tue, 06 Sep 2022 14:59:46 +0800</lastBuildDate><atom:link href="https://blog.stceum.top/archieves/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UEFI boot: how does that actually work, then?</title>
       <link>https://blog.stceum.top/archieves/uefi_boot/</link>
