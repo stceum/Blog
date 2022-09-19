@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UEFI on stceum hang</title>
+    <link>https://blog.stceum.top/tags/uefi/</link>
+    <description>Recent content in UEFI on stceum hang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 19 Aug 2022 13:47:11 +0000</lastBuildDate><atom:link href="https://blog.stceum.top/tags/uefi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>神奇的 UEFI</title>
+      <link>https://blog.stceum.top/posts/sth-about-uefi/</link>
+      <pubDate>Fri, 19 Aug 2022 13:47:11 +0000</pubDate>
+      
+      <guid>https://blog.stceum.top/posts/sth-about-uefi/</guid>
+      <description>在安装双系统的过程中，硬件是如何找到引导项的，硬件是如何找到启动程序的，以及如何优雅的删除启动项，这些问题一直困扰着我。
+在网上查询到很多的资料之后，发现一篇大牛的文章对这些问题有了详细的解答，文章风格也十分有趣，便翻译记录如下。
+link link link</description>
+    </item>
+    
+  </channel>
+</rss>
