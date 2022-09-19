@@ -11,11 +11,11 @@
     <loc>https://blog.stceum.top/test/</loc>
     <lastmod>2022-09-19T10:44:39+08:00</lastmod>
   </url><url>
-    <loc>https://blog.stceum.top/posts/</loc>
-    <lastmod>2022-09-10T16:53:50+00:00</lastmod>
+    <loc>https://blog.stceum.top/posts/my-first-post/</loc>
+    <lastmod>2022-09-13T13:50:28+08:00</lastmod>
   </url><url>
-    <loc>https://blog.stceum.top/posts/something-about-using-custom-wsl-distro/</loc>
-    <lastmod>2022-09-10T16:53:50+00:00</lastmod>
+    <loc>https://blog.stceum.top/posts/</loc>
+    <lastmod>2022-09-13T13:50:28+08:00</lastmod>
   </url><url>
     <loc>https://blog.stceum.top/archieves/</loc>
     <lastmod>2022-09-06T14:59:46+08:00</lastmod>
@@ -23,24 +23,8 @@
     <loc>https://blog.stceum.top/archieves/uefi_boot/</loc>
     <lastmod>2022-09-06T14:59:46+08:00</lastmod>
   </url><url>
-    <loc>https://blog.stceum.top/posts/linux-windows-dual-boot/</loc>
-    <lastmod>2022-08-19T13:50:51+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.stceum.top/posts/git-frequently-uesd/</loc>
-    <lastmod>2022-08-19T13:50:03+00:00</lastmod>
+    <loc>https://blog.stceum.top/categories/</loc>
   </url><url>
     <loc>https://blog.stceum.top/tags/</loc>
-    <lastmod>2022-08-19T13:47:11+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.stceum.top/tags/uefi/</loc>
-    <lastmod>2022-08-19T13:47:11+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.stceum.top/posts/sth-about-uefi/</loc>
-    <lastmod>2022-08-19T13:47:11+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.stceum.top/posts/hello-world/</loc>
-    <lastmod>2022-08-19T13:47:09+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.stceum.top/categories/</loc>
   </url>
 </urlset>
