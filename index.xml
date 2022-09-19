@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Mon, 19 Sep 2022 14:22:49 +0800</lastBuildDate><atom:link href="https://blog.stceum.top/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>关于我</title>
+      <link>https://blog.stceum.top/about/</link>
+      <pubDate>Mon, 19 Sep 2022 19:14:46 +0800</pubDate>
+      
+      <guid>https://blog.stceum.top/about/</guid>
+      <description>暂时还没想好要说些什么</description>
+    </item>
+    
+    <item>
       <title>Debian sid with systemd on WSL2</title>
       <link>https://blog.stceum.top/archives/debian_sid_on_wsl2/</link>
       <pubDate>Mon, 19 Sep 2022 14:22:49 +0800</pubDate>
