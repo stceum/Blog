@@ -6,14 +6,20 @@
     <description>Recent content on stceum hang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Sep 2022 10:44:39 +0800</lastBuildDate><atom:link href="https://blog.stceum.top/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Sep 2022 14:22:49 +0800</lastBuildDate><atom:link href="https://blog.stceum.top/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test</title>
-      <link>https://blog.stceum.top/test/test/</link>
-      <pubDate>Mon, 19 Sep 2022 10:44:39 +0800</pubDate>
+      <title>Debian sid with systemd on WSL2</title>
+      <link>https://blog.stceum.top/archieves/debian_sid_on_wsl2/</link>
+      <pubDate>Mon, 19 Sep 2022 14:22:49 +0800</pubDate>
       
-      <guid>https://blog.stceum.top/test/test/</guid>
-      <description>test file</description>
+      <guid>https://blog.stceum.top/archieves/debian_sid_on_wsl2/</guid>
+      <description>This is the backup page for Debian sid with systemd on WSL2
+written by fardjad
+Connet me if this page bothers you and I will delete it.
+Debian sid with systemd on WSL2 Instructions for running Debian sid with systemd on WSL2
+Instructions Make sure you&amp;rsquo;re running Windows 10 Build 19041+ (run ver)
+Enable the Windows Subsystem for Linux (reboot if needed):
+# In an elevated PowerShell session Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux Follow the instructions on this page or install a Linux distro from the Microsoft Store (this is required for preparing a Debian sid WSL distro)</description>
     </item>
     
     <item>

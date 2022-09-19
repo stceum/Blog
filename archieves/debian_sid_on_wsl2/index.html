@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.103.0" />
+  <title> Debian sid with systemd on WSL2 | stceum hang </title>
+  <meta name="description" content="A simple blog">
+  <link rel="stylesheet" href="https://blog.stceum.top/css/simpleness.css">
+  <link rel="canonical" href="https://blog.stceum.top/archieves/debian_sid_on_wsl2/">
+  <link rel="alternate" type="application/rss+xml" href="" title="stceum hang">
+  
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  
+</head>
+<body class="container">
+  <nav class="navigation">
+  <div class="nav-left">
+    
+    <div class="nav-item nav-title">
+      <a href="https://blog.stceum.top/"> stceum hang</a>
+    </div>
+    <div class="nav-item nav-menu">
+      
+      <a href="/"> Home</a>
+      
+      <a href="/about/"> About</a>
+      
+    </div>
+  </div>
+  <div class="nav-item nav-right fontawesome">
+    
+    
+    <a href="https://github.com/stceum" target="_blank">
+      <i title="GitHub" class="fab fa-github"></i>
+    </a>
+    
+    
+    <a href="https://blog.stceum.top/index.xml" target="_blank">
+      <i title="RSS" class="fas fa-rss"></i>
+    </a>
+    
+  </div>
+</nav>
+
+  
+<article class="post">
+  <header class="post-header">
+    <h1 style="text-align: center;" >Debian sid with systemd on WSL2</h1>
+    <div class="post-metadata">
+    
+      <time datetime="2022-09-19T14:22:49&#43;08:00">September 19, 2022</time> &nbsp; 
+    
+    
+    
+    
+    
+      <i class="far fa-clock"></i>
+      
+      
+      
+      
+        1 min
+      
+      59 s
+      &nbsp;
+    
+    
+    </div>
+  </header>
+
+  
+
+  <div class="post-text">
+    <hr>
+<div style="text-align: center;">
+<p>This is the backup page for <a href="https://gist.github.com/fardjad/7ee02761fdaa6b620e0ee8a715121883">Debian sid with systemd on WSL2</a></p>
+<p>written by <a href="https://gist.github.com/fardjad">fardjad</a></p>
+<p>Connet <a href="mailto:zh_elepika@126.com">me</a> if this page bothers you and I will delete it.</p>
+</div>
+<hr>
+<h1 id="debian-sid-with-systemd-on-wsl2">Debian sid with systemd on WSL2</h1>
+<blockquote>
+<p>Instructions for running Debian sid with systemd on WSL2</p>
+</blockquote>
+<h2 id="instructions">Instructions</h2>
+<ol>
+<li>
+<p>Make sure you&rsquo;re running Windows 10 Build 19041+ (run <code>ver</code>)</p>
+</li>
+<li>
+<p><a href="https://docs.microsoft.com/en-us/windows/wsl/install-on-server">Enable the Windows Subsystem for Linux</a> (reboot if needed):</p>
+<pre><code> # In an elevated PowerShell session
+ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+</code></pre>
+</li>
+<li>
+<p>Follow the instructions on <a href="https://docs.microsoft.com/en-us/windows/wsl/install-on-server#extract-and-install-a-linux-distribution">this page</a> or install a Linux distro from the Microsoft Store (this is required for preparing a Debian sid WSL distro)</p>
+</li>
+<li>
+<p><a href="https://cdimage.debian.org/cdimage/cloud/sid/daily">Download</a> the latest Debian sid cloud image. Make sure to download the latest <code>.tar.xz</code> file for your processor architecture (ex. <code>debian-sid-generic-amd64-daily-20200710-323.tar.xz</code>)</p>
+</li>
+<li>
+<p>Create a rootfs archive from the downloaded sid image:</p>
+<pre><code> # In WSL (assuming you're running Debian Linux)
+
+
+ # Extract the disk image from the archive
+ # Make sure tar and xz-tools are installed (ie. apt install tar xz-utils)
+
+ tar xf debian-sid-generic-*.tar.xz
+
+
+ # mount the Linux filesystem
+ # make sure fdisk, grep, and gawk are installed (ie. apt install fdisk grep gawk)
+
+ sector_size=$(/sbin/fdisk -l disk.raw | grep 'Sector size' | grep -Po '\K([0-9]+)(?= bytes$)')
+ start=$(/sbin/fdisk -l disk.raw | grep 'Linux filesystem' | awk '{ print $2 }')
+ offset=$(($start * $sector_size))
+
+ sudo mkdir -p /mnt/sid
+ sudo mount -o loop,offset=$offset disk.raw /mnt/sid
+
+
+ # Create a rootfs `tar.gz` archive
+
+ sudo tar -C /mnt/sid -cpzf debian-sid.tar.gz .
+ sudo chown $(id -un):$(id -gn) debian-sid.tar.gz
+</code></pre>
+</li>
+<li>
+<p>Open File Explorer, navigate to <code>\\wsl$\name-of-the-distro</code>, and move the rootfs archive file to a directory accessible to Windows</p>
+</li>
+<li>
+<p>Open a PowerShell prompt in the directory containing the rootfs archive and import it:</p>
+<pre><code> wsl --import debian-sid \path\to\the\directory\you\want\to\install\debian-sid\into debian-sid.tar.gz --version 2
+</code></pre>
+</li>
+<li>
+<p>Start a shell in Debian sid and run the following commands:</p>
+<pre><code> # Update the OS
+ apt update
+ apt full-upgrade -y
+
+ # Make sure sudo is installed
+ apt install sudo
+</code></pre>
+</li>
+<li>
+<p>Edit <code>/etc/adduser.conf</code> and set <code>ADD_EXTRA_GROUPS</code> to 1</p>
+</li>
+<li>
+<p>Create a non-root (ie. <code>adduser YOUR_USERNAME</code>)</p>
+</li>
+<li>
+<p>Edit <code>/etc/wsl.conf</code> and make sure the following lines exist in the file:</p>
+<pre><code>[user]
+default = YOUR_USERNAME
+</code></pre>
+</li>
+<li>
+<p>Restart WSL:</p>
+<pre><code># In PowerShell
+wsl --shutdown
+wsl -d debian-sid
+</code></pre>
+</li>
+<li>
+<p>Remove unnecessary packages/files:</p>
+<pre><code>apt remove --purge 'grub-*' 'linux-image-*'
+rm -rf /boot/*
+rm -rf /lost+found
+</code></pre>
+</li>
+<li>
+<p><strong>TODO: Adapt <a href="https://github.com/DamionGans/ubuntu-wsl2-systemd-script">this</a></strong></p>
+</li>
+<li>
+<p>Create a file in <code>/etc/profile.d/wsl.sh</code> with the following contents:</p>
+<pre><code># Start or enter a PID namespace in WSL2
+source /usr/sbin/start-systemd-namespace
+
+# TODO: move the following lines into a script and allow running it script without a password (ie. /etc/sudoers.d/...)
+sudo systemctl default
+sudo systemctl reset-failed
+</code></pre>
+</li>
+<li>
+<p>Mask the services with <code>not-found</code> state:</p>
+<pre><code>TODO: do something with the output of the following command (possibly pipe to xargs systemctl mask)
+systemctl --plain --no-legend --no-pager --state=not-found --all | awk '{ print $1 }'</code></pre>
+</li>
+</ol>
+
+  </div>
+
+  <footer class="post-footer">
+    
+
+    
+
+    
+    
+  </footer>
+  
+  <div class="comments">
+  <div class="comments">
+
+
+
+</div>
+  </div>
+</article>
+
+  <div class="foot">
+  
+  &copy; 2022 - 2022 &#183;
+  <a href="/"> stceum hang </a> &#183;
+  Theme <a href="https://github.com/RainerChiang/simpleness">Simpleness</a> Powered by <a href="https://gohugo.io/">Hugo</a> &#183;
+  <a href="#"><i class="fas fa-chevron-up"></i></a>
+</div>
+</body>
+  <script src="/js/lazyload.min.js"></script>
+<script>
+  var lazyImage = new LazyLoad({container: document.getElementById('article')});
+</script>
+
+
+
+
+</html>
