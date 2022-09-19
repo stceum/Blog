@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Archieves on stceum hang</title>
-    <link>https://blog.stceum.top/archieves/</link>
-    <description>Recent content in Archieves on stceum hang</description>
+    <title>Archives on stceum hang</title>
+    <link>https://blog.stceum.top/archives/</link>
+    <description>Recent content in Archives on stceum hang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Sep 2022 14:22:49 +0800</lastBuildDate><atom:link href="https://blog.stceum.top/archieves/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Sep 2022 14:22:49 +0800</lastBuildDate><atom:link href="https://blog.stceum.top/archives/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Debian sid with systemd on WSL2</title>
-      <link>https://blog.stceum.top/archieves/debian_sid_on_wsl2/</link>
+      <link>https://blog.stceum.top/archives/debian_sid_on_wsl2/</link>
       <pubDate>Mon, 19 Sep 2022 14:22:49 +0800</pubDate>
       
-      <guid>https://blog.stceum.top/archieves/debian_sid_on_wsl2/</guid>
+      <guid>https://blog.stceum.top/archives/debian_sid_on_wsl2/</guid>
       <description>This is the backup page for Debian sid with systemd on WSL2
 written by fardjad
 Connet me if this page bothers you and I will delete it.
@@ -24,10 +24,10 @@ Enable the Windows Subsystem for Linux (reboot if needed):
     
     <item>
       <title>UEFI boot: how does that actually work, then?</title>
-      <link>https://blog.stceum.top/archieves/uefi_boot/</link>
+      <link>https://blog.stceum.top/archives/uefi_boot/</link>
       <pubDate>Tue, 06 Sep 2022 14:59:46 +0800</pubDate>
       
-      <guid>https://blog.stceum.top/archieves/uefi_boot/</guid>
+      <guid>https://blog.stceum.top/archives/uefi_boot/</guid>
       <description>This is the backup page for UEFI boot: how does that actually work, then? written by Adam Williamson on 2014-01-25 21:07 with Source
 Connet me if this page bothers you and I will delete it.
 It&#39;s AdamW Essay Time again! If you&#39;re looking for something short and snappy, look elsewhere.
