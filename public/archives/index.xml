@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>stceum hang</title>
-    <link>https://blog.stceum.top/</link>
-    <description>Recent content on stceum hang</description>
+    <title>Archives on stceum hang</title>
+    <link>https://blog.stceum.top/archives/</link>
+    <description>Recent content in Archives on stceum hang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 19 Sep 2022 14:22:49 +0800</lastBuildDate><atom:link href="https://blog.stceum.top/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>关于我</title>
-      <link>https://blog.stceum.top/about/</link>
-      <pubDate>Mon, 19 Sep 2022 19:14:46 +0800</pubDate>
-      
-      <guid>https://blog.stceum.top/about/</guid>
-      <description>暂时还没想好要说些什么</description>
-    </item>
-    
+    <lastBuildDate>Mon, 19 Sep 2022 14:22:49 +0800</lastBuildDate><atom:link href="https://blog.stceum.top/archives/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Debian sid with systemd on WSL2</title>
       <link>https://blog.stceum.top/archives/debian_sid_on_wsl2/</link>
@@ -41,15 +32,6 @@ Enable the Windows Subsystem for Linux (reboot if needed):
 Connet me if this page bothers you and I will delete it.
 It&#39;s AdamW Essay Time again! If you&#39;re looking for something short and snappy, look elsewhere.
 Kamil Paral kindly informs me I&#39;m a chronic sufferer of Graphomania. Always nice to know what&#39;s wrong with you.</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://blog.stceum.top/posts/my-first-post/</link>
-      <pubDate>Mon, 01 Aug 2022 13:50:28 +0800</pubDate>
-      
-      <guid>https://blog.stceum.top/posts/my-first-post/</guid>
-      <description>Site is created!</description>
     </item>
     
   </channel>

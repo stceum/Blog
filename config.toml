@@ -16,6 +16,7 @@ googleAnalytics = ""
   startyear = "2022"
   description = "A simple blog"
   disqus = ""
+  mainSections = ["posts"]
 
 [params.valine]
   enable = false
@@ -60,3 +61,6 @@ tag = "tags"
     style = "monokai" # github, dracula, vim, monokai
     tabWidth = 4
     
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
