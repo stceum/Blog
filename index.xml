@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Mon, 19 Sep 2022 14:22:49 +0800</lastBuildDate><atom:link href="https://blog.stceum.top/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Friends</title>
+      <link>https://blog.stceum.top/friends/</link>
+      <pubDate>Tue, 20 Sep 2022 15:45:38 +0800</pubDate>
+      
+      <guid>https://blog.stceum.top/friends/</guid>
+      <description>友链 emon100’s blog DuckZhu&#39;s Blog amtoaer&#39;s Blog </description>
+    </item>
+    
+    <item>
       <title>关于我</title>
       <link>https://blog.stceum.top/about/</link>
       <pubDate>Mon, 19 Sep 2022 19:14:46 +0800</pubDate>
@@ -31,6 +40,20 @@ Debian sid with systemd on WSL2 Instructions for running Debian sid with systemd
 Instructions Make sure you&amp;rsquo;re running Windows 10 Build 19041+ (run ver)
 Enable the Windows Subsystem for Linux (reboot if needed):
 # In an elevated PowerShell session Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux Follow the instructions on this page or install a Linux distro from the Microsoft Store (this is required for preparing a Debian sid WSL distro)</description>
+    </item>
+    
+    <item>
+      <title>关于部署舒适的 WSL 开发环境</title>
+      <link>https://blog.stceum.top/posts/wsl/</link>
+      <pubDate>Sat, 10 Sep 2022 16:53:50 +0800</pubDate>
+      
+      <guid>https://blog.stceum.top/posts/wsl/</guid>
+      <description>本来安装的 Linux 和 Windows 的双系统，结果学习、上课都需要腾讯会议、钉钉、QQ、微信，在 Linux 上用着很不舒服：腾讯会议阉割了功能，钉钉直播时无法正常接收同学、老师在直播间发的消息，QQ 和微信各种 bug 和卡顿以及十分违和的 wine、deepin wine。 无奈，迁移回 Windows 系统。
+回到 Windows 后，虽然日常生活舒服了很多，但是开发过程需要运行的 Linux 脚本无法在 Windows 上运行，虚拟机无法调用电脑上的独立显卡，经过多重筛选，只能勉强使用 WSL2。
+WSL2 有很多优点：可以调用 Windows 上的程序，甚至可以配合 Linux 管道使用，十分方便；内核运行在 Hyper-V 上，底层上也是原生的 Linux，经过微软优化，拥有理想的启动速度；可以调用宿主机上几乎所有的资源，其中就包括独立显卡，可以配置 CUDA 环境供 Linux 子系统使用；实现好的 WSLg 拥有不错的图形显示功能，可以在 Linux 上原生运行图形程序。
+WSL2 也有很多缺点：子系统实际上是经过阉割的 Linux 子系统，0号进程必须是/init，无法使用依赖于 systemd 的程序，当然，大多数的依赖 systemd 的服务都可以使用命令手动启动，无伤大雅；WSL2 说到底还是运行于虚拟机中，对于一些高级的功能如 kvm 虚拟化功能，无法使用；对于系统硬件的控制仍然需要通过 Windows，没有 Linux 实体机上修改硬件状态来的优雅；就是不喜欢微软的 WSL2，我就是倔，就是不喜欢，用起来总有种二手 Linux 的感觉；等等。
+但是不管 WSL2 好不好，我喜不喜欢，在不争气的国产 app 严重依赖的微软的操作系统上，我还能怎样呢。接下来就来说一说怎么利用自定义的镜像文件配置好 WSL2 环境。
+将 ISO/disk.raw 转换成可以导入 WSL2 使用的 tar.gz 文件 开启所有 WSL2 需要的 Windows features，包括 Microsoft-Windows-Subsystem-Linux 等；按照步骤安装一个微软商店可以下载的 WSL2 发行版；确保有一个可以直接使用的 WSL2 环境；</description>
     </item>
     
     <item>

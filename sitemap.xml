@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.stceum.top/friends/</loc>
+    <lastmod>2022-09-20T15:45:38+08:00</lastmod>
+  </url><url>
     <loc>https://blog.stceum.top/about/</loc>
     <lastmod>2022-09-19T19:14:46+08:00</lastmod>
   </url><url>
@@ -14,17 +17,24 @@
     <loc>https://blog.stceum.top/</loc>
     <lastmod>2022-09-19T14:22:49+08:00</lastmod>
   </url><url>
+    <loc>https://blog.stceum.top/posts/</loc>
+    <lastmod>2022-09-10T16:53:50+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.stceum.top/tags/</loc>
+    <lastmod>2022-09-10T16:53:50+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.stceum.top/tags/wsl/</loc>
+    <lastmod>2022-09-10T16:53:50+08:00</lastmod>
+  </url><url>
+    <loc>https://blog.stceum.top/posts/wsl/</loc>
+    <lastmod>2022-09-10T16:53:50+08:00</lastmod>
+  </url><url>
     <loc>https://blog.stceum.top/archives/uefi_boot/</loc>
     <lastmod>2022-09-06T14:59:46+08:00</lastmod>
   </url><url>
     <loc>https://blog.stceum.top/posts/my-first-post/</loc>
     <lastmod>2022-08-01T13:50:28+08:00</lastmod>
   </url><url>
-    <loc>https://blog.stceum.top/posts/</loc>
-    <lastmod>2022-08-01T13:50:28+08:00</lastmod>
-  </url><url>
     <loc>https://blog.stceum.top/categories/</loc>
-  </url><url>
-    <loc>https://blog.stceum.top/tags/</loc>
   </url>
 </urlset>

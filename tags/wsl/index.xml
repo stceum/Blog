@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on stceum hang</title>
-    <link>https://blog.stceum.top/posts/</link>
-    <description>Recent content in Posts on stceum hang</description>
+    <title>wsl on stceum hang</title>
+    <link>https://blog.stceum.top/tags/wsl/</link>
+    <description>Recent content in wsl on stceum hang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 10 Sep 2022 16:53:50 +0800</lastBuildDate><atom:link href="https://blog.stceum.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Sep 2022 16:53:50 +0800</lastBuildDate><atom:link href="https://blog.stceum.top/tags/wsl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于部署舒适的 WSL 开发环境</title>
       <link>https://blog.stceum.top/posts/wsl/</link>
@@ -19,15 +19,6 @@ WSL2 有很多优点：可以调用 Windows 上的程序，甚至可以配合 Li
 WSL2 也有很多缺点：子系统实际上是经过阉割的 Linux 子系统，0号进程必须是/init，无法使用依赖于 systemd 的程序，当然，大多数的依赖 systemd 的服务都可以使用命令手动启动，无伤大雅；WSL2 说到底还是运行于虚拟机中，对于一些高级的功能如 kvm 虚拟化功能，无法使用；对于系统硬件的控制仍然需要通过 Windows，没有 Linux 实体机上修改硬件状态来的优雅；就是不喜欢微软的 WSL2，我就是倔，就是不喜欢，用起来总有种二手 Linux 的感觉；等等。
 但是不管 WSL2 好不好，我喜不喜欢，在不争气的国产 app 严重依赖的微软的操作系统上，我还能怎样呢。接下来就来说一说怎么利用自定义的镜像文件配置好 WSL2 环境。
 将 ISO/disk.raw 转换成可以导入 WSL2 使用的 tar.gz 文件 开启所有 WSL2 需要的 Windows features，包括 Microsoft-Windows-Subsystem-Linux 等；按照步骤安装一个微软商店可以下载的 WSL2 发行版；确保有一个可以直接使用的 WSL2 环境；</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://blog.stceum.top/posts/my-first-post/</link>
-      <pubDate>Mon, 01 Aug 2022 13:50:28 +0800</pubDate>
-      
-      <guid>https://blog.stceum.top/posts/my-first-post/</guid>
-      <description>Site is created!</description>
     </item>
     
   </channel>
