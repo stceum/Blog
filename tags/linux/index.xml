@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on stceum hang</title>
+    <link>https://blog.stceum.top/tags/linux/</link>
+    <description>Recent content in Linux on stceum hang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 22 Jun 2020 09:06:00 +0800</lastBuildDate><atom:link href="https://blog.stceum.top/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>一些常用的命令</title>
+      <link>https://blog.stceum.top/posts/some_useful_commands/</link>
+      <pubDate>Mon, 22 Jun 2020 09:06:00 +0800</pubDate>
+      
+      <guid>https://blog.stceum.top/posts/some_useful_commands/</guid>
+      <description>一些常用的命令 tar 命令 git add 命令 ln 命令 tar 命令 原文链接,此处仅为备份
+Linux 上有功能强大的 tar 命令，tar 最初是为了制作磁带备份（tape archive）而设计的，它的作用是把文件和目录备份到磁带中，然后从磁带中提取或恢复文件。现在我们可以使用 tar 来备份数据到任何存储介质上。它是文件级备份，不必考虑底层文件系统类别，并且支持增量备份。
+部分常用选项 -z, &amp;ndash;gzip：使用 gzip 工具（解）压缩，后缀一般为 .gz -c, &amp;ndash;create：tar 打包，后缀一般为 .tar -f, &amp;ndash;file=：后面立刻接打包或压缩后得到的文件名 -x, &amp;ndash;extract：解包命令，与 -c 对应 -p：保留备份数据的原本权限和属性 -g：后接增量备份的快照文件 -C：指定解压缩的目录 &amp;ndash;exclude：排除不打包的目录或文件，支持正则匹配 其他
+-X, &amp;ndash;exclude-from：在一个文件中列出要排除的目录或文件（在 --exclude= 较多时使用） -t, &amp;ndash;list：列出备份档案中的文件列表，不与 -c、-x 同时出现 -j, &amp;ndash;bzip2：使用 bzip2 工具（解）压缩，后缀一般为 .bz2 -P：保留绝对路径，解压时同样会自动解压到绝对路径下 -v：（解）压缩过程显示文件处理过程，常用但不建议对大型文件使用 增量备份（网站）数据 许多系统（应用或网站）每天都有静态文件产生，对于一些比较重要的静态文件如果有进行定期备份的需求，就可以通过 tar 打包压缩备份到指定的地方，特别是对一些总文件比较大比较多的情况，还可以利用 -g 选项来做增量备份。
+备份的目录最好使用相对路径，也就是进入到需要备份的根目录下
+具体示例方法如下。
+备份当前目录下的所有文件 # tar -g /tmp/snapshot_data.snap -zcpf /tmp/data01.tar.gz .</description>
+    </item>
+    
+  </channel>
+</rss>
