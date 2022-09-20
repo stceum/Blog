@@ -6,11 +6,62 @@
     <description>Recent content in Posts on stceum hang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Aug 2022 13:50:28 +0800</lastBuildDate><atom:link href="https://blog.stceum.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Sep 2022 16:53:50 +0800</lastBuildDate><atom:link href="https://blog.stceum.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于部署舒适的 WSL 开发环境</title>
+      <link>https://blog.stceum.top/posts/wsl/</link>
+      <pubDate>Sat, 10 Sep 2022 16:53:50 +0800</pubDate>
+      
+      <guid>https://blog.stceum.top/posts/wsl/</guid>
+      <description>本来安装的 Linux 和 Windows 的双系统，结果学习、上课都需要腾讯会议、钉钉、QQ、微信，在 Linux 上用着很不舒服：腾讯会议阉割了功能，钉钉直播时无法正常接收同学、老师在直播间发的消息，QQ 和微信各种 bug 和卡顿以及十分违和的 wine、deepin wine。 无奈，迁移回 Windows 系统。
+回到 Windows 后，虽然日常生活舒服了很多，但是开发过程需要运行的 Linux 脚本无法在 Windows 上运行，虚拟机无法调用电脑上的独立显卡，经过多重筛选，只能勉强使用 WSL2。
+WSL2 有很多优点：可以调用 Windows 上的程序，甚至可以配合 Linux 管道使用，十分方便；内核运行在 Hyper-V 上，底层上也是原生的 Linux，经过微软优化，拥有理想的启动速度；可以调用宿主机上几乎所有的资源，其中就包括独立显卡，可以配置 CUDA 环境供 Linux 子系统使用；实现好的 WSLg 拥有不错的图形显示功能，可以在 Linux 上原生运行图形程序。
+WSL2 也有很多缺点：子系统实际上是经过阉割的 Linux 子系统，0号进程必须是/init，无法使用依赖于 systemd 的程序，当然，大多数的依赖 systemd 的服务都可以使用命令手动启动，无伤大雅；WSL2 说到底还是运行于虚拟机中，对于一些高级的功能如 kvm 虚拟化功能，无法使用；对于系统硬件的控制仍然需要通过 Windows，没有 Linux 实体机上修改硬件状态来的优雅；就是不喜欢微软的 WSL2，我就是倔，就是不喜欢，用起来总有种二手 Linux 的感觉；等等。
+但是不管 WSL2 好不好，我喜不喜欢，在不争气的国产 app 严重依赖的微软的操作系统上，我还能怎样呢。接下来就来说一说怎么利用自定义的镜像文件配置好 WSL2 环境。
+将 ISO/disk.raw 转换成可以导入 WSL2 使用的 tar.gz 文件 开启所有 WSL2 需要的 Windows features，包括 Microsoft-Windows-Subsystem-Linux 等；按照步骤安装一个微软商店可以下载的 WSL2 发行版；确保有一个可以直接使用的 WSL2 环境；</description>
+    </item>
+    
+    <item>
+      <title>数字逻辑与数字系统课程设计</title>
+      <link>https://blog.stceum.top/posts/course_design_of_digital_logic_and_digital_systems/</link>
+      <pubDate>Sun, 02 Aug 2020 22:44:45 +0800</pubDate>
+      
+      <guid>https://blog.stceum.top/posts/course_design_of_digital_logic_and_digital_systems/</guid>
+      <description>课程设计报告 课程名称：数字逻辑与数字系统课程设计
+设计题目：基于FPGA的8位模型计算机设计与仿真
+专 业：计算机科学与技术
+设计日期：2020年6月29日~2020年7月24
+摘要 本设计将自顶向下地对8位模型计算机设计，完成系统设计、功能模块和仿真、系统顶层设计与仿真，加深了对&amp;quot;数字逻辑与数字系统&amp;quot;知识的理解，强化了理论知识，掌握了的实践和应用。
+在QuartusⅡ环境下，采用VHDL语言构建算术逻辑运算单元、累加器、控制器、地址寄存器、程序计数器、数据寄存器、存储器、节拍发生器、时钟信号源、指令寄存器、指令译码器功能模块，以及模型计算机系统。在ModelSim仿真环境下，完成功能模块，以及模型系统仿真。
+功能模块主要有：Controller控制器、ALU算术逻辑单元、Shifter移位器、InstrReg指令寄存器、OutReg结果寄存器、ProgCnt 程序计数器、AddrReg 地址寄存器、OpReg工作寄存器、CMP比较器和RegArray 寄存器阵列。系统驱动时钟由Cyclone IV E系列FPGA开发板的主控时钟50MHz经分频得到，并通过节拍脉冲发生器对各功能模块的微操作实现有序控制。
+本系统的设计在满足基本要求的前提下，进行了进一步的功能扩充。为保证运行更多有意义的，对指令集做到了尽可能的丰富，例如：指令集包含算术指令、逻辑指令、存取操作指令、停机指令等共计13条。为了扩大系统的运算范围，将8位模型机扩充为16位， 指令码也同时变成16位， 提升了可扩充性。
+关键词：Quartus Prime(20.1), 8位模型机, ModelSIM , VHDL语言
+第1章 绪论 1.1 8位模型计算机简介 为了更好地理解数字逻辑与数字系统课程的基础知识，进一步学习计算机的基本结构和原理。在本次课程设计中，选择了8位模型计算机的设计与实现题目，为了进一步提高自己的能力，增强自己的水平，对该题目做出的改进有添加部分指令、将8位扩充为16位模型机。
+模型计算机，顾名思义，就是以实际的计算机结构为基础，对其进行抽象和简化，使之具备计算机的基本结构和功能，可以对数据或指令进行处理和执行。
+模型计算机应该具备以下模块：CPU、存储单元、输入和输出、以及总线，可以使本系统具有更好的演示性和可操作性。
+根据汇编语言的知识，CPU模块的核心器件是控制器，通用寄存器组AX、BX，专用寄存器(例如：指令寄存器，程序计数器和地址寄存器等)，以及用于驱动各器件协同有序工作的时序发生器。
+1.2设计主要内容 1.2.1 设计指标 本模型计算机具备以下功能、模块，以及参数指标：
+模块：存储器模块、CPU模块、外设输入模块和输出模块；
+总线：包括地址总线和数据总线，总线位宽为16位；
+指令集：涵盖基本的汇编指令，如算术运算指令、逻辑运算指令、移位指令、跳转指令、内存读写指令、数据转移指令、运算指令和停机指令，共计13条；
+存储器容量：16 * 1bit(8 byte)；
+输入输出方式：使用存储器初始化文件，固化在内存和寄存器阵列中的数据，尽可能丰富数据来源和去向，以及基本的数据存取。输入存在RAM中，输出存储在寄存器中。
+1.2.2 设计思路 1 . 模块化设计
+(1) 根据确立的设计指标，对各个模块进行单独设计和仿真，对该模块可能涉及的作用和功能有清晰地认识，同时需要注意各模块协同工作时的时序关系和控制信号；
+(2) 模块设计的方式可以更为多样化，以VHDL语言编程为主、电路原理图设计和状态转换图设计等方式为辅，尽可能多地熟悉 Quartus II软件的使用方法和功能；
+(3) 自顶向下，逐层设计。对各模块的设计应从顶层的应用/功能入手，分解其在执行指令中选通信号的控制情况和模块工作的先后情况，对可能出现的问题要及早发现及早改正，以免后续综合时，对系统产生不确定性影响。
+2. 顶层设计与描述
+当功能模块设计完成后，可由VHDL代码生成元件符号，根据模型机的结构，将各元器件用总线和控制线连接起来，连接的顺序由小及大、由内到外；每连完一个模块就测试一个模块，确保模块内部可以正常工作。
+3. 仿真
+在设计过程中，及时对小的模块进行仿真验证，通过才能继续设计。若只在最后进行仿真验证，则对于出现的问题将可能很难发现或解决，从而增大了程序调试的任务量，迟滞了课程设计的进度。仿真工具使用ModelSim，编写VHDL测试文件.
+第2章 系统设计 2.1 模型计算机原理 所谓模型计算机就是以计算机实际结构为基础，将其简化，能对输入的信息进行处理运算，更便于分析设计。
+计算机主要由运算器、控制器、存储器、输入设备、输出设备五大部分组成。计算机能按照用户要求、完成提前设计好的指令，指令是计算机执行具体操作的命令。一条指令就是机器语言的一个语句，用来说明机器硬件要完成什么样的基本操作。</description>
+    </item>
+    
     <item>
       <title>My First Post</title>
       <link>https://blog.stceum.top/posts/my-first-post/</link>
-      <pubDate>Mon, 01 Aug 2022 13:50:28 +0800</pubDate>
+      <pubDate>Sat, 01 Aug 2020 13:50:28 +0800</pubDate>
       
       <guid>https://blog.stceum.top/posts/my-first-post/</guid>
       <description>Site is created!</description>

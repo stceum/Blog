@@ -39,6 +39,10 @@ googleAnalytics = ""
   name = "About"
   url = "/about/"
   weight = 2
+  [[menu.main]]
+  name = "Friends"
+  url = "/friends/"
+  weight = 3
 
 [social]
   github = "https://github.com/stceum"
