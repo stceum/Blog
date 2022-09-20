@@ -15,3 +15,7 @@ draft: false
 # 联系方式
 
 Github： [stceum](https://github.com/stceum)
+
+# 喜欢听的歌
+
+{{<aplayer server="netease" type="playlist" id="3778678" theme="#2980b9">}}
